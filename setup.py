@@ -1,22 +1,15 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='pypdfy',
-    version='0.1',
+    version='0.1.1',
     license='MIT',
     description='An easy approach to metadata extraction for PDF files',
     author='David Bros Campillo',
-    download_url='',
+    author_email='david_corp896@outlook.es',
+    maintainer='David Bros',
+    maintainer_email='david_corp896@outlook.es',
+    packages=find_packages(exclude=['README']),
+    download_url='https://github.com/TheHunter896/pypdfy',
     keywords=['PDF', 'METADATA', 'NO DEPENDENCIES', 'PYTHON', 'OOP'],
-    install_requires=['validators'],
-    classifiers=['Development status :: 4 - Beta',
-                 'Intended Audience :: Developers',
-                 'Topic :: Software tool',
-                 'License :: MIT License',
-                 'Programming Language :: Python :: 3',
-                 'Programming Language :: Python :: 3.4',
-                 'Programming Language :: Python :: 3.5',
-                 'Programming Language :: Python :: 3.6',
-                 'Programming Language :: Python :: 3.7',
-                 ]
-)
+    )
